@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var emailArray = ["kim@naver.com", "sung@hanmail.net","park@ikosmo.co.kr"];
+    console.log('<h2>연습문제>도메인 추출하기</h2>');
+    
+    //split 방법
+    var getDomainStr = function(emailArr){
+
+    for(var i=0; i<emailArray.length; i++){
+    var email = emailArray[i];
+    var emailArr = email.split("@")[1].split(".")[0];
+      console.log(emailArr);
+    }
+
+    //indexOf 방법
+    
+    // for(var i=0; i<emailArray.length; i++){
+    //     var email = emailArray[i];
+
+    //     var start = email.indexOf("@") + 1;  
+    //     var end = email.indexOf(".", start); 
+    //     var domain2 = email.substring(start, end);
+
+    //     console.log(domain2);
+    //   }
+
+    }
+    getDomainStr(emailArray);
+  </script>
+</body>
+</html>
