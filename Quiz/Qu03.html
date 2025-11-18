@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>*로 탑 만들기</h2>
+  <hr>
+  <script>
+    let r= "";
+    for(let i=0; i<=5; i++){
+      r += ("*");
+      document.write(r+"<br>");
+    }
+  </script>
+  
+  <h2>*로 역 피라미드 만들기</h2>
+  <hr>
+  <script>
+  let total = 5; 
+
+  for (let a = 1; a <= total; a++) {  
+    let line = "";
+    for (let b = total; b >= 1; b--) 
+        if (b >= a) {  
+            line += "*";
+        }
+        document.write(line + "<br>");
+      }
+  </script>
+</body>
+</html>
