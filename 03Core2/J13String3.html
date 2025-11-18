@@ -21,15 +21,15 @@
 
     //indexOf 방법
     
-    // for(var i=0; i<emailArray.length; i++){
-    //     var email = emailArray[i];
+    for(var i=0; i<emailArray.length; i++){
+        var email = emailArray[i];
 
-    //     var start = email.indexOf("@") + 1;  
-    //     var end = email.indexOf(".", start); 
-    //     var domain2 = email.substring(start, end);
+        var start = email.indexOf("@") + 1;  
+        var end = email.indexOf(".", start); 
+        var domain2 = email.substring(start, end);
 
-    //     console.log(domain2);
-    //   }
+        console.log(domain2);
+      }
 
     }
     getDomainStr(emailArray);
